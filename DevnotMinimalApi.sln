@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuredMinimalApi", "3-S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiWithScanning", "4-Scanning\MinimalApiWithScanning\MinimalApiWithScanning.csproj", "{13AFDC87-9B3A-4532-9B75-D3E655D91BC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiRepr", "5-Repr\MinimalApiRepr\MinimalApiRepr.csproj", "{49C04D64-90DE-4F1A-8689-1E7FC779080A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,7 @@ Global
 		{A86E33EE-5D0D-4D21-BEC3-52393594AA4B} = {B6F10119-6D48-4604-BA64-1ADE0A19725E}
 		{6883D451-3D62-479D-9C4A-737177FC96C5} = {2217CCE0-DEAF-4503-BDCD-E7F29BBC073B}
 		{13AFDC87-9B3A-4532-9B75-D3E655D91BC4} = {E2288F94-4DC1-493F-A28F-FF0C9DE9EAA3}
+		{49C04D64-90DE-4F1A-8689-1E7FC779080A} = {0509C248-E7E6-434F-B8FB-244DC8287364}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CE2C0392-59CC-4C09-9335-A2A2BE5222D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -55,5 +58,9 @@ Global
 		{13AFDC87-9B3A-4532-9B75-D3E655D91BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13AFDC87-9B3A-4532-9B75-D3E655D91BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13AFDC87-9B3A-4532-9B75-D3E655D91BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C04D64-90DE-4F1A-8689-1E7FC779080A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C04D64-90DE-4F1A-8689-1E7FC779080A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C04D64-90DE-4F1A-8689-1E7FC779080A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C04D64-90DE-4F1A-8689-1E7FC779080A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

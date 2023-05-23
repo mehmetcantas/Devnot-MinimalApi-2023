@@ -1,3 +1,5 @@
+using MinimalApiSwagger;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -11,7 +13,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Hello World!")
+    .AddEndpointFilter<SampleFilter>();
 
 app.MapGet("/devnot", () => "Hello Devnot!");
 
