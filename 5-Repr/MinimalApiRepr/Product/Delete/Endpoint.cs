@@ -6,7 +6,7 @@ public static class Endpoint
 {
     public static WebApplication MapProductDeleteEndpoint(this WebApplication app)
     {
-        app.MapPost("api/product/{id}", async (int id,IProductService productService) =>
+        app.MapDelete("api/product/{id}", async (int id,IProductService productService) =>
         {
             await productService.Delete(id);
             return Results.Ok(new {Message = "Product deleted"});
