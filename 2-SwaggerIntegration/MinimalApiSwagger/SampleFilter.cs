@@ -5,7 +5,7 @@ public class SampleFilter: IEndpointFilter
     protected readonly ILogger Logger;
     private readonly string _methodName;
 
-    protected SampleFilter(ILoggerFactory loggerFactory)
+    public SampleFilter(ILoggerFactory loggerFactory)
     {
         Logger = loggerFactory.CreateLogger<SampleFilter>();
         _methodName = GetType().Name;
@@ -14,9 +14,9 @@ public class SampleFilter: IEndpointFilter
     public virtual async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context,
         EndpointFilterDelegate next)
     {
-        Logger.LogInformation("{MethodName} Before next", _methodName);
+        Logger.LogInformation($"Received request for {context.HttpContext.Request.Path}");
         var result = await next(context);
-        Logger.LogInformation("{MethodName} After next", _methodName);
+        Logger.LogInformation("{MethodName} executed after endpoint", _methodName);
         return result;
     }
 }

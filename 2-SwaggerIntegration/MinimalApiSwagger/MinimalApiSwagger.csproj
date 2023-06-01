@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    </PropertyGroup>
+      <UserSecretsId>ea1f2559-4b57-45b2-9148-26904f5ef10b</UserSecretsId>
+  </PropertyGroup>
 
     <ItemGroup>
       <Content Include="..\..\.dockerignore">
@@ -14,8 +15,9 @@
     </ItemGroup>
 
     <ItemGroup>
-<!--      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />-->
-<!--      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />-->
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+      <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
     </ItemGroup>

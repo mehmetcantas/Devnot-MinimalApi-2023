@@ -27,7 +27,7 @@ public static class ProductEndpoints
             {
                 await productService.AddProduct(product);
                 return Results.Created($"/products/{product.Id}", product);
-            }).WithValidation<Product>();
+            });
 
         app.MapPut("/products/{id}", async (int id, Product product, IProductService productService, IValidator<Product> validator) =>
         {
