@@ -43,12 +43,14 @@ builder.Services.AddAuthorizationBuilder()
         policy
             .RequireClaim(ClaimTypes.Role, "Admin"));
 
+
+
+var app = builder.Build();
+
 var devnotGroup = app.MapGroup("/devnot")
     .AddEndpointFilter<SampleFilter>();
 
 devnotGroup.MapGet("/hello", () => "Hello Devnot!");
-
-var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
